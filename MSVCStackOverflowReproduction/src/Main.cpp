@@ -11,7 +11,7 @@ happens under a strict set of conditions:
 	1. The module containing the function(s) which will modify the anonymous union is *NOT* exporting the header file
 	   containing the union's definition as a header unit. Instead, it is including the header in the global module fragment.
 
-	2. The module containing the function(s) is imported into a separate translation unit, *AND* the header file containing
+	2. The module containing the function(s) is imported into a translation unit, *AND* the header file containing
 	   the union definition *IS* #included. CL.exe will not crash if the header file is not included, even if the function
 	   which modifies the union is directly or indirectly called.
 
