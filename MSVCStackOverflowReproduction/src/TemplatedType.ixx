@@ -1,8 +1,9 @@
 module;
 #include <cstdint>
-#include "EnumTypes.h"
+#include "EnumTypes.h"  // <- Comment out this #include and remove the '/' characters preceding "export import "EnumTypes.h"" to make the project build.
 
 export module TemplatedType;
+// export import "EnumTypes.h";
 
 namespace NS
 {
